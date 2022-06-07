@@ -10,7 +10,6 @@
 
 
 
-
 #bo-navbar .nav-link{
     position: relative;
     color: var(--bs-secondary);
@@ -19,8 +18,6 @@
 #bo-navbar .nav-link.active{
     color: var(--bs-primary);
 }
-
-
 
 #bo-navbar .nav-link::after{
     content: '';
@@ -78,4 +75,9 @@
 hr{
     color: var(--bs-primary);
     opacity: 1;
+}
+
+#title-back-button{
+    text-decoration: none;
+    color: var(--bs-dark);
 }
