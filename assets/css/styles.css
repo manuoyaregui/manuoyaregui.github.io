@@ -81,3 +81,11 @@ hr{
     text-decoration: none;
     color: var(--bs-dark);
 }
+
+#social-icons a{
+    color: var(--bs-secondary);
+    transition: color .2s ease-out;
+}
+#social-icons a:hover{
+    color: var(--bs-primary);
+}
