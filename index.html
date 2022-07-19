@@ -22,9 +22,9 @@
 
 <body class="d-flex justify-content-center">
     <header>
-        <nav class="navbar navbar-expand-xl fixed-top navbar-light bg-light">
+        <nav class="navbar navbar-expand-xl fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#inicio">Manuel Oyaregui</a>
+                <a class="navbar-brand fontColor-2 me-5" href="#inicio">Manuel Oyaregui</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic"
                     aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -50,25 +50,48 @@
                 </div>
             </div>
         </nav>
+        <hr>
     </header>
 
     <div id="inicio"></div>
     <main class="antifixed container-fluid row w-100 d-flex justify-content-center">
 
-        <article id="bloque-intro" class="bg-light col-12 container-fluid row d-flex justify-content-around my-4 py-2 align-items-center">
+        <article id="bloque-intro" class="col-12 container-fluid row d-flex justify-content-around my-4 py-2 align-items-center">
             <div class="foto-portada d-flex justify-content-center col-lg-5 col-md-12"><img src="assets/img/Placeholder foto mia.png" alt="Foto Portada" width="80%"></div>
             <div class="col-lg-5 col-md-12">
                 <h1>Manuel Oyaregui</h1>
-                <h5 class="text-secondary">Programador</h5>
+                <h5 class="fontColor-2">Programador</h5>
                 <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolores omnis quaerat, nam
                     provident praesentium optio eum iure suscipit veritatis debitis perferendis eligendi voluptatum
                     ipsum dolore sit illo quo aspernatur.</p>
+                <div class="d-flex justify-content-start col-12 social-media" id="social-icons">
+
+                    <a href="https://www.instagram.com/oya.manu/" class="instagram fa-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x text-light"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/manuel-oyaregui/" class="linkedin fa-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-linkedin-in fa-stack-1x text-light"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/manuel-oyaregui/" class="linkedin fa-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-github fa-stack-1x text-light"></i>
+                    </a>
+
+                    <a href="https://ar.pinterest.com/manueloyaregui/" class="pinterest fa-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-pinterest fa-stack-1x text-light"></i>
+                    </a>
+
+                </div>
             </div>
         </article>
 
         <article id="bloque-misProyectos"
-            class="bg-light col-12 container-fluid row d-flex justify-content-around my-4 py-2">
+            class=" col-12 container-fluid row d-flex justify-content-around my-4 py-2">
             <h2>Mis Proyectos <hr> </h2>
             
             <!-- * Item *-->
@@ -97,11 +120,12 @@
                 <div class="card-body">
                     <div class="card-title h4">Just Neon but Everywhere</div>
                     <div class="card-text badges">
-                        <span class="badge bg-primary">Unity</span>
-                        <span class="badge bg-primary">C#</span>
-                        <span class="badge bg-primary">3D</span>
+                        <span class="badge backgroundColor-2">Unity</span>
+                        <span class="badge backgroundColor-2">C#</span>
+                        <span class="badge backgroundColor-2">3D</span>
                     </div>
-                    <a href="https://github.com/manuoyaregui/JustNeonButEveryWhere" class="btn btn-primary mt-2">Ir al Proyecto</a>
+                    <a href="https://github.com/manuoyaregui/JustNeonButEveryWhere" class="btn 
+                    interactuable mt-2">Ir al Proyecto</a>
                 </div>
             </div>
             
@@ -131,9 +155,9 @@
                 <div class="card-body">
                     <div class="card-title h4">Just Neon but Everywhere</div>
                     <div class="card-text badges">
-                        <span class="badge bg-primary">Blender</span>
-                        <span class="badge bg-primary">Photoshop</span>
-                        <span class="badge bg-primary">3D</span>
+                        <span class="badge backgroundColor-2">Blender</span>
+                        <span class="badge backgroundColor-2">Photoshop</span>
+                        <span class="badge backgroundColor-2">3D</span>
                     </div>
                     <a href="https://skfb.ly/ouFRX" class="btn btn-primary mt-2">Ir al Proyecto</a>
                 </div>
@@ -142,7 +166,7 @@
             
         </article>
 
-        <article id="bloque-habilidades" class="bg-light col-12 container-fluid row d-flex justify-content-around my-4 py-2">
+        <article id="bloque-habilidades" class=" col-12 container-fluid row d-flex justify-content-around my-4 py-2">
             <h2>Habilidades <hr> </h2>
 
             <div class="col-12 col-lg-5 my-2">
@@ -219,7 +243,7 @@
         </article>
        
         <article id="bloque-educacion"
-            class="bg-light col-12 container-fluid row d-flex justify-content-around my-4 py-2">
+            class=" col-12 container-fluid row d-flex justify-content-around my-4 py-2">
             <h2>Educación <hr></h2>
             <div class="card col-12 col-lg-5 my-2">
                 <div class="card-body">
@@ -270,7 +294,7 @@
         </article>
 
         <article id="bloque-contacto"
-            class="bg-light col-12 container-fluid row d-flex justify-content-around my-4 py-2">
+            class=" col-12 container-fluid row d-flex justify-content-around my-4 py-2">
             <h2>Contacto <hr></h2>
             
             <div class="col-8 container-fluid row d-flex justify-content-around align-items-center">
@@ -278,7 +302,7 @@
                     <p>Email: manu.oyaregui@gmail.com</p>
                     <p>Ciudad: CABA, Argentina</p>
                 </div>
-                <div class="d-flex justify-content-around col-12 social-media" id="social-icons">
+                <div class="d-flex justify-content-center col-12 social-media" id="social-icons">
 
                     <a href="https://www.instagram.com/oya.manu/" class="instagram fa-stack">
                         <i class="fa fa-circle fa-stack-2x"></i>

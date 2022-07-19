@@ -1,9 +1,8 @@
 :root{
-    --mo-col-1: 0,0,255;
-    --mo-col-2: 0,0,255;
-    --mo-col-3: 0,0,255;
-    --mo-col-4: 0,0,255;
-    --mo-col-5: 0,0,255;
+    --mo-col-1: 2, 48, 71;
+    --mo-col-2: 33, 158, 188;
+    --mo-col-4: 251, 133, 0;
+    --mo-col-5: 255, 183, 3;
 
     --mo-negro: 0,0,0;
     --mo-blanco: 255,255,255;
@@ -13,7 +12,32 @@
 .fontColor-1{
     color: rgb( var(--mo-col-1));
 }
+.fontColor-2{
+    color: rgb( var(--mo-col-2));
+}
+.fontColor-3{
+    color: rgb( var(--mo-col-3));
+}
+.fontColor-4{
+    color: rgb( var(--mo-col-4));
+}
+.fontColor-5{
+    color: rgb( var(--mo-col-5));
+}
 
 .backgroundColor-1{
     background-color: rgb( var(--mo-col-1) );
 }
+.backgroundColor-2{
+    background-color: rgb( var(--mo-col-2) );
+}
+.backgroundColor-3{
+    background-color: rgb( var(--mo-col-3) );
+}
+.backgroundColor-4{
+    background-color: rgb( var(--mo-col-4) );
+}
+.backgroundColor-5{
+    background-color: rgb( var(--mo-col-5) );
+}
+
