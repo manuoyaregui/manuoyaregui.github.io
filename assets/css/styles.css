@@ -4,7 +4,13 @@
 
 .social-media .fa-stack{
     font-size: 1.25em;
+
 }
+.social-media .fa-stack .fa i{
+    color: rgb(var(--mo-col-2));
+}
+
+
 
 h1,h2{
     font-family: var(--secondaryFont) !important;
@@ -22,4 +28,19 @@ h2{
 .progress-bar{
     height: 1em;
 }
+
+.progress-bar{
+    background-color: rgb(var(--mo-col-3));
+}
+
+.card{
+    background-color: rgb(var(--mo-col-1));
+    border: .2em solid rgb(var(--mo-col-2));
+    border-radius: .4em;
+}
+
+
+
+
+
 
