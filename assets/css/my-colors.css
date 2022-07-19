@@ -1,0 +1,19 @@
+:root{
+    --mo-col-1: 0,0,255;
+    --mo-col-2: 0,0,255;
+    --mo-col-3: 0,0,255;
+    --mo-col-4: 0,0,255;
+    --mo-col-5: 0,0,255;
+
+    --mo-negro: 0,0,0;
+    --mo-blanco: 255,255,255;
+
+}
+
+.fontColor-1{
+    color: rgb( var(--mo-col-1));
+}
+
+.backgroundColor-1{
+    background-color: rgb( var(--mo-col-1) );
+}

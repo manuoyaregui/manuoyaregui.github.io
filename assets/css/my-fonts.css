@@ -1,0 +1,41 @@
+/*
+    Debe haber 3 tipos de fuentes como mínimo
+    debe haber clases que apliquen peso e inclinación
+
+    
+
+    - Se Importa la fuente y luego se cambia el nombre en la variable de :root
+*/
+
+/** La principal*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/** Para Titulares*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+:root{
+    --primaryFont: 'Poppins', sans-serif;
+    --secondaryFont: 'Lato', sans-serif;
+}
+
+
+*{
+    font-family: var(--primaryFont);
+}
+
+.fuente-general{
+    font-family: var(--primaryFont);
+}
+
+.fuente-titulares{
+    font-family: var(--secondaryFont);
+}
+
+
+.negrita{
+    font-weight: bold;
+}
+
+.italica{
+    font-style: italic;
+}

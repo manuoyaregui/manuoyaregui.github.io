@@ -1,91 +1,25 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.antifixed{
+    margin-top: 4em;
 }
 
-.bodyDim{
-    height: 100vh;
+.social-media .fa-stack{
+    font-size: 1.25em;
 }
 
-
-
-#bo-navbar .nav-link{
-    position: relative;
-    color: var(--bs-secondary);
+h1,h2{
+    font-family: var(--secondaryFont) !important;
 }
 
-#bo-navbar .nav-link.active{
-    color: var(--bs-primary);
+h1{
+    font-size: 3em;
 }
 
-#bo-navbar .nav-link::after{
-    content: '';
-    position: absolute;
-    width: 50%;
-    transform: scaleX(0);
-    height: .1em;
-    left: 22%;
-    bottom: 20%;
-    background-color: var(--bs-primary);
-    transform-origin: bottom right;
-
-    transition: transform .3s ease-out;
-}
-#bo-navbar .nav-link:hover::after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
+h2{
+    font-size: 2.25em;
 }
 
-
-#bo-navbar a:hover{
-    color: var(--bs-primary);
-    
+.progress,
+.progress-bar{
+    height: 1em;
 }
 
-#bo-navbar 
-.nav-link.active::after
-{
-    content: '';
-    position: absolute;
-    width: 40%;
-    transform: scaleX(1);
-    height: .1em;
-    left: 22%;
-    bottom: 20%;
-    background-color: var(--bs-primary);
-}
-
-.subrayado{
-    position: relative;
-}
-
-.subrayado::after
-{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(1);
-    height: .125em;
-    left: 0;
-    bottom: 0;
-    background-color: var(--bs-primary);
-}
-
-hr{
-    color: var(--bs-primary);
-    opacity: 1;
-}
-
-#title-back-button{
-    text-decoration: none;
-    color: var(--bs-dark);
-}
-
-#social-icons a{
-    color: var(--bs-secondary);
-    transition: color .2s ease-out;
-}
-#social-icons a:hover{
-    color: var(--bs-primary);
-}
