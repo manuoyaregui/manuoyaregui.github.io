@@ -1,19 +1,47 @@
+.fondo-nav{
+    /*background-color: rgba( var(--mo-col-1) );*/
+    background: rgb(2,48,71);
+background: linear-gradient(180deg, rgba(2,48,71,1) 0%, rgba(2,48,71,0.8) 95%, rgba(2,48,71,0) 100%);
+}
+
 .antifixed{
     margin-top: 4em;
 }
 
 .social-media .fa-stack{
     font-size: 1.25em;
+}
 
+.text-interactuable{
+    color: rgb( var(--mo-col-4) );
+    transition: .3s;
 }
-.social-media .fa-stack .fa i{
-    color: rgb(var(--mo-col-2));
+
+.fa-stack:hover
+.text-interactuable{
+    color: rgb( var(--mo-col-5) );
 }
+
+.text-interactuable:hover{
+    color: rgb( var(--mo-col-5) );
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb( 191, 19, 99)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler {
+    border-color: rgb( var(--mo-col-4) );
+} 
+
+.custom-toggler:hover{
+    stroke: rgb( var(--mo-col-5) );
+}
+
 
 
 
 h1,h2{
-    font-family: var(--secondaryFont) !important;
+    font-family: var(--secondaryFont);
 }
 
 h1{
@@ -29,15 +57,38 @@ h2{
     height: 1em;
 }
 
-.progress-bar{
-    background-color: rgb(var(--mo-col-3));
+.progress{
+    background-color: rgb( var(--mo-col-2) );
 }
 
-.card{
-    background-color: rgb(var(--mo-col-1));
-    border: .2em solid rgb(var(--mo-col-2));
-    border-radius: .4em;
+.progress-bar{
+    background-color: rgb(var(--mo-col-4));
 }
+
+#bloque-habilidades
+.h5{
+    color: rgb( var(--mo-blanco) );
+}
+
+
+.card .carousel{
+    box-shadow: .2em .2em red;
+}
+
+.interactuable{
+    background-color: rgb( var(--mo-col-4) );
+}
+
+.interactuable:hover{
+    background-color: rgb( var(--mo-col-5) );
+}
+
+.card-subtitle,
+.card-text{
+    color: rgb( var(--mo-negro) );
+}
+
+
 
 
 

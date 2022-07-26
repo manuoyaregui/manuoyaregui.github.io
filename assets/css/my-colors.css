@@ -2,10 +2,10 @@
     --mo-col-1: 2, 48, 71;
     --mo-col-2: 19, 81, 108;
     --mo-col-3: 33, 158, 188;
-    --mo-col-4: 251, 133, 0;
-    --mo-col-5: 255, 166, 0;
+    --mo-col-4: 191, 19, 99;
+    --mo-col-5: 223, 24, 117;
 
-    --mo-negro: 0,0,0;
+    --mo-negro: 50,50,50;
     --mo-blanco: 220,220,220;
 
 }
@@ -32,6 +32,9 @@
 .fontColor-blanco{
     color: rgb(var(--mo-blanco));
 }
+.fontColor-negro{
+    color: rgb(var(--mo-negro));
+}
 
 .backgroundColor-1{
     background-color: rgb( var(--mo-col-1) );
@@ -48,7 +51,7 @@
 .backgroundColor-5{
     background-color: rgb( var(--mo-col-5) );
 }
-.backgroundColor-5{
+.backgroundColor-blanco{
     background-color: rgb( var(--mo-blanco) );
 }
 
