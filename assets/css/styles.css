@@ -1,7 +1,6 @@
 .fondo-nav{
     /*background-color: rgba( var(--mo-col-1) );*/
     background: rgb(2,48,71);
-background: linear-gradient(180deg, rgba(2,48,71,1) 0%, rgba(2,48,71,0.8) 95%, rgba(2,48,71,0) 100%);
 }
 
 .antifixed{
@@ -12,9 +11,17 @@ background: linear-gradient(180deg, rgba(2,48,71,1) 0%, rgba(2,48,71,0.8) 95%, r
     font-size: 1.25em;
 }
 
-.text-interactuable{
+.text-interactuable,
+nav .text-interactuable{
     color: rgb( var(--mo-col-4) );
     transition: .3s;
+}
+
+nav .text-interactuable:hover{
+    font-size: 1.05em;
+}
+nav .logo.text-interactuable:hover{
+    font-size: 1.3em;
 }
 
 .fa-stack:hover
@@ -63,15 +70,19 @@ h2{
 
 .progress,
 .progress-bar{
-    height: 1em;
+    height: 1.4em;
+    text-align: center;
 }
 
 .progress{
     background-color: rgb( var(--mo-col-2) );
+    
 }
 
 .progress-bar{
     background-color: rgb(var(--mo-col-6));
+    color: rgb( var(--mo-col-6) );
+    transition: .2s;
 }
 
 #bloque-habilidades
@@ -83,10 +94,12 @@ h2{
 
 .interactuable{
     background-color: rgb( var(--mo-col-4) );
+    color: rgb(var(--mo-blanco));
+    transition: .2s;
 }
 
 .interactuable:hover{
-    background-color: rgb( var(--mo-col-5) );
+    background-color: rgb( var(--mo-col-6) );
 }
 
 .card-subtitle,
@@ -102,17 +115,30 @@ h2{
 
 .card:hover{
     box-shadow:  0 0 .3em .1em rgb( var(--mo-col-4) );
-    
 }
 
 h3{
     color: rgb(var(--mo-blanco));
 }
 
+.foto-portada img{
+    border-radius: 50%;
+    box-shadow: 0 0 .3em .2em rgb( var(--mo-col-4) );
+}
 
 
+#bloque-habilidades div:hover .progress-bar{
+    background-color: rgb( var(--mo-col-4) );
+    color: rgb(var(--mo-blanco));
+    
+}
 
+#bloque-educacion .card .card-subtitle,
+#bloque-educacion .card .card-text{
+    transition: .2s;
+}
 
-
-
-
+#bloque-educacion .card:hover .card-subtitle,
+#bloque-educacion .card:hover .card-text{
+    font-size: 1.5em;
+}
