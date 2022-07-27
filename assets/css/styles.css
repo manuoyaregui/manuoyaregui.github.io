@@ -153,3 +153,13 @@ h3{
 #bloque-educacion .card:hover .card-text{
     font-size: 1.5em;
 }
+
+#bloque-misProyectos .card .badges,
+#bloque-misProyectos .card .btn.interactuable{
+    opacity: 0;
+    transition: .3s;
+}
+#bloque-misProyectos .card:hover .badges,
+#bloque-misProyectos .card:hover .btn.interactuable{
+    opacity: 1;
+}
