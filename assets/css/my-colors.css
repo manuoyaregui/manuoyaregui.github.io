@@ -4,6 +4,7 @@
     --mo-col-3: 33, 158, 188;
     --mo-col-4: 191, 19, 99;
     --mo-col-5: 223, 24, 117;
+    --mo-col-6: 26,201,140;
 
     --mo-negro: 50,50,50;
     --mo-blanco: 220,220,220;
@@ -50,6 +51,10 @@
 }
 .backgroundColor-5{
     background-color: rgb( var(--mo-col-5) );
+}
+
+.backgroundColor-6{
+    background-color: rgb( var(--mo-col-6) );
 }
 .backgroundColor-blanco{
     background-color: rgb( var(--mo-blanco) );

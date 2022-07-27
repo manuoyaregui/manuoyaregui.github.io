@@ -19,11 +19,19 @@ background: linear-gradient(180deg, rgba(2,48,71,1) 0%, rgba(2,48,71,0.8) 95%, r
 
 .fa-stack:hover
 .text-interactuable{
-    color: rgb( var(--mo-col-5) );
+    color: rgb( var(--mo-col-6) );
+}
+
+.interactuable-nav{
+    transition: .2s;
+}
+
+.interactuable-nav:hover{
+    text-decoration: underline;
 }
 
 .text-interactuable:hover{
-    color: rgb( var(--mo-col-5) );
+    color: rgb( var(--mo-col-6) );
 }
 
 .navbar-toggler-icon {
@@ -34,7 +42,7 @@ background: linear-gradient(180deg, rgba(2,48,71,1) 0%, rgba(2,48,71,0.8) 95%, r
 } 
 
 .custom-toggler:hover{
-    stroke: rgb( var(--mo-col-5) );
+    stroke: rgb( var(--mo-col-6) );
 }
 
 
@@ -42,6 +50,7 @@ background: linear-gradient(180deg, rgba(2,48,71,1) 0%, rgba(2,48,71,0.8) 95%, r
 
 h1,h2{
     font-family: var(--secondaryFont);
+    color: rgb( var(--mo-col-6) );
 }
 
 h1{
@@ -62,7 +71,7 @@ h2{
 }
 
 .progress-bar{
-    background-color: rgb(var(--mo-col-4));
+    background-color: rgb(var(--mo-col-6));
 }
 
 #bloque-habilidades
@@ -71,9 +80,6 @@ h2{
 }
 
 
-.card .carousel{
-    box-shadow: .2em .2em red;
-}
 
 .interactuable{
     background-color: rgb( var(--mo-col-4) );
@@ -85,7 +91,22 @@ h2{
 
 .card-subtitle,
 .card-text{
-    color: rgb( var(--mo-negro) );
+    color: rgb( var(--mo-col-3) );
+}
+
+.card{
+    background-color: rgba( var(--mo-col-2), .4);
+    border:none;
+    transition: .2s;
+}
+
+.card:hover{
+    box-shadow:  0 0 .3em .1em rgb( var(--mo-col-4) );
+    
+}
+
+h3{
+    color: rgb(var(--mo-blanco));
 }
 
 
