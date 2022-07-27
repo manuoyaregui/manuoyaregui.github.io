@@ -1,5 +1,8 @@
 # Mi Portfolio
 
+## Cambios Pendientes / otras ideas
+- Agregar más íconos en nav y la seccion de skills
+- Agregar elementos en el background
 
 ## ¿Qué debo incluir?
 ### 1. Datos personales 

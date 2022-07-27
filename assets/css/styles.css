@@ -126,6 +126,21 @@ h3{
     box-shadow: 0 0 .3em .2em rgb( var(--mo-col-4) );
 }
 
+#bloque-educacion .card .card-subtitle,
+#bloque-educacion .card .card-text
+{
+    transition: .2s;
+}
+
+#bloque-habilidades i{
+    opacity: 0;
+    transition: .3s;
+}
+
+#bloque-habilidades div:hover i{
+    opacity: 1;
+    
+}
 
 #bloque-habilidades div:hover .progress-bar{
     background-color: rgb( var(--mo-col-4) );
@@ -133,10 +148,6 @@ h3{
     
 }
 
-#bloque-educacion .card .card-subtitle,
-#bloque-educacion .card .card-text{
-    transition: .2s;
-}
 
 #bloque-educacion .card:hover .card-subtitle,
 #bloque-educacion .card:hover .card-text{
