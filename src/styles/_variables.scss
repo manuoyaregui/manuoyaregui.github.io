@@ -1,11 +1,35 @@
+// Colors
+$colors: (
+    'dark-blue': #10072A,
+    'violet': #4A216A,
+    'orange': #e99430,
+    'magenta': #dd02dd,
+    'white': #eeeeee
+);
+
+// Backward compatibility variables (optional, but good practice if used elsewhere)
+$dark-blue-color: map-get($colors, 'dark-blue');
+$violet-color: map-get($colors, 'violet');
+$orange-color: map-get($colors, 'orange');
+$magenta-color: map-get($colors, 'magenta');
+$white-color: map-get($colors, 'white');
+
 :root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    @each $name, $color in $colors {
+        --#{$name}-color: #{$color};
+    }
+
+    font-family: system-ui,
+    Avenir,
+    Helvetica,
+    Arial,
+    sans-serif;
     line-height: 1.5;
     font-weight: 400;
 
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    color: $orange-color;
+    background-color: $dark-blue-color;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -13,16 +37,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-    margin: 0;
-    display: flex;
-    min-width: 320px;
-    min-height: 100vh;
-}
-
 @media (prefers-color-scheme: light) {
     :root {
-        color: #213547;
-        background-color: #ffffff;
+        color: $dark-blue-color;
+        background-color: $white-color;
     }
 }

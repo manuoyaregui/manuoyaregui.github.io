@@ -1,10 +1,13 @@
-function App() {
+import SVGProcessor from "../components/SVGProcessor"
+
+const MainPage = () => {
 
   return (
-    <div>
-      MainComponent
-    </div>
+    <section>
+      <h1>MainPage</h1>
+      <SVGProcessor image='planet' />
+    </section>
   )
 }
 
-export default App
+export default MainPage
