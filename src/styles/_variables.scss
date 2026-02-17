@@ -2,19 +2,23 @@
 @use "sass:map";
 
 $colors: (
+    'black-blue': #0c011b,
     'dark-blue': #10072A,
     'violet': #4A216A,
     'orange': #e99430,
     'magenta': #dd02dd,
-    'white': #eeeeee
+    'white': #ccc,
+    'white-secondary': #aaa
 );
 
 // Backward compatibility variables (optional, but good practice if used elsewhere)
+$black-blue-color: map.get($colors, 'black-blue');
 $dark-blue-color: map.get($colors, 'dark-blue');
 $violet-color: map.get($colors, 'violet');
 $orange-color: map.get($colors, 'orange');
 $magenta-color: map.get($colors, 'magenta');
 $white-color: map.get($colors, 'white');
+$white-secondary-color: map.get($colors, 'white-secondary');
 
 :root {
     @each $name, $color in $colors {
@@ -45,3 +49,8 @@ $white-color: map.get($colors, 'white');
         background-color: $white-color;
     }
 }
+
+// Fonts
+$font-fantasy: 'Permanent Marker', cursive;
+$font-serif: 'Patua One', serif;
+$font-sans-serif: 'Roboto', sans-serif;

@@ -32,7 +32,7 @@ $sky-elements: (
     height: 200vh;
     position: relative;
     overflow-x: hidden;
-    background: linear-gradient(to bottom, #0c011b 0%, #1a0b2e 100%);
+    background: linear-gradient(to bottom, $black-blue-color 0%, $dark-blue-color 100%);
 
     .parallax-layer {
         position: fixed;
@@ -55,7 +55,7 @@ $sky-elements: (
                 .heading__main {
                     font-size: 80px;
                     font-family: "Permanent Marker", cursive;
-                    color: #ccc;
+                    color: $white-color;
                 }
 
                 .heading__secondary {
@@ -63,7 +63,7 @@ $sky-elements: (
                     font-weight: 100;
                     font-size: 24px;
                     margin-top: -15px;
-                    color: #bbb;
+                    color: $white-secondary-color;
                 }
             }
 
@@ -147,7 +147,7 @@ $sky-elements: (
                 bottom: 0;
                 width: 100%;
                 height: 35vh;
-                background: linear-gradient(to top, #1a0b2e 50%, red); // Placeholder gradient
+                background: linear-gradient(to top, $black-blue-color 50%, $dark-blue-color); // Placeholder gradient
 
                 // SVG-like shape using clip-path for placeholder
                 &::after {
@@ -157,7 +157,7 @@ $sky-elements: (
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    background: #2a1b3d;
+                    background: $violet-color;
                     clip-path: polygon(0% 100%,
                             15% 40%,
                             35% 90%,
@@ -171,36 +171,6 @@ $sky-elements: (
 
         &.layer-foreground {
             z-index: z($z-layers, "foreground");
-
-            .tree-placeholder {
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                height: 50vh; // Taller for foreground
-
-                // Placeholder trees
-                &::before {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 10%;
-                    width: 100px;
-                    height: 300px;
-                    background: #0f0518;
-                    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-                }
-
-                &::after {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    right: 15%;
-                    width: 120px;
-                    height: 350px;
-                    background: #0f0518;
-                    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-                }
-            }
         }
     }
 
