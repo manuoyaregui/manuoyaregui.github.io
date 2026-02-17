@@ -1,33 +1,3 @@
-// Z-Index Management
-@use "sass:list";
-
-$z-layers: (
-    "sky",
-    "mountains",
-    "foreground",
-    "ui"
-);
-
-$sky-elements: (
-    "stars",
-    "planet",
-    "clouds-back",
-    "giraffe",
-    "heading-group",
-    "clouds-front"
-);
-
-@function z($list, $name) {
-    $index: list.index($list, $name);
-
-    @if $index {
-        @return $index;
-    }
-
-    @warn 'There is no item "#{$name}" in this list; choosing 0';
-    @return 0;
-}
-
 .parallax-container {
     height: 200vh;
     position: relative;
