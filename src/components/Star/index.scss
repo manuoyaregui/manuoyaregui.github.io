@@ -1,0 +1,27 @@
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: twinkle-star ease-in-out infinite;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+
+    &--orange {
+        background-color: $orange-color;
+        box-shadow: 0 0 4px rgba($orange-color, 0.6);
+    }
+}
+
+@keyframes twinkle-star {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: var(--star-opacity);
+    }
+
+    50% {
+        transform: scale(0.8);
+        opacity: calc(var(--star-opacity) * 0.3);
+    }
+}

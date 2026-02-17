@@ -1,10 +1,13 @@
 import ParallaxScene from "../components/ParallaxScene"
 import useParallax from "../hooks/useParallax";
+import useMouseParallax from "../hooks/useMouseParallax";
 import Planet from '../components/SVGs/lib/Planet';
 import Giraffe from '../components/SVGs/lib/Giraffe';
+import StarField from '../components/StarField';
 
 const MainPage = () => {
   const { getTransform } = useParallax();
+  const { getMouseOffset } = useMouseParallax();
 
   return (
     <div>
@@ -16,14 +19,17 @@ const MainPage = () => {
             <h1 className="heading__main">Manuel Oyaregui</h1>
             <h3 className="heading__secondary">my portfolio</h3>
           </div>
-          <Planet className="planet" style={{ transform: getTransform(0.4) }} />
-          <div className="stars__group">
-            <div className="stars stars__01" style={{ transform: getTransform(0.3) }} />
-            <div className="stars stars__02" style={{ transform: getTransform(-0.3) }} />
-          </div>
+          <Planet className="planet" style={{ transform: `${getTransform(0.4)} ${getMouseOffset(8)}` }} />
+          <StarField
+            count={70}
+            getTransform={getTransform}
+            getMouseOffset={getMouseOffset}
+            mouseIntensity={5}
+            scrollSpeed={0.3}
+          />
           <div className="clouds">
-            <div className="clouds-back" style={{ transform: getTransform(.6) }} />
-            <div className="clouds-front" style={{ transform: getTransform(.8) }} />
+            <div className="clouds-back" style={{ transform: `${getTransform(.6)} ${getMouseOffset(12)}` }} />
+            <div className="clouds-front" style={{ transform: `${getTransform(.8)} ${getMouseOffset(18)}` }} />
           </div>
           <Giraffe className="giraffe" style={{ transform: getTransform(.7) }} />
         </div>

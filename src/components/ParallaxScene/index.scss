@@ -1,3 +1,15 @@
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
+
 .parallax-container {
     height: 200vh;
     position: relative;
@@ -45,24 +57,6 @@
                 max-width: 200px;
                 rotate: -15deg;
                 z-index: z($sky-elements, "planet");
-            }
-
-            .stars {
-                position: absolute;
-                height: 40vh;
-                width: 100%;
-                background-image: url('../../assets/stars.svg');
-                background-repeat: repeat-x;
-                background-size: contain;
-                background-position: top;
-                z-index: z($sky-elements, "stars");
-
-                &__02 {
-                    rotate: 180deg;
-                }
-
-
-                &__group {}
             }
 
             .clouds {
