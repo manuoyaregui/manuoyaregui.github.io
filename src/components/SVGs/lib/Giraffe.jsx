@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Giraffe = (props) => {
     return (
         <svg {...props} width="1057" height="2899" viewBox="0 0 1057 2899" fill="none" xmlns="http://www.w3.org/2000/svg">

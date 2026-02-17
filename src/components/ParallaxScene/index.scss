@@ -32,7 +32,7 @@ $sky-elements: (
     height: 200vh;
     position: relative;
     overflow-x: hidden;
-    background: linear-gradient(to bottom, #1a0b2e 0%, #4a216a 100%);
+    background: linear-gradient(to bottom, #0c011b 0%, #1a0b2e 100%);
 
     .parallax-layer {
         position: fixed;
@@ -132,8 +132,8 @@ $sky-elements: (
 
             .giraffe {
                 position: absolute;
-                top: 25vh;
-                right: -20rem;
+                top: 40vh;
+                right: -22rem;
                 height: 175vh;
                 z-index: z($sky-elements, "giraffe");
             }
@@ -147,7 +147,7 @@ $sky-elements: (
                 bottom: 0;
                 width: 100%;
                 height: 35vh;
-                background: linear-gradient(to top, #270E33 50%, transparent); // Placeholder gradient
+                background: linear-gradient(to top, #1a0b2e 50%, red); // Placeholder gradient
 
                 // SVG-like shape using clip-path for placeholder
                 &::after {
