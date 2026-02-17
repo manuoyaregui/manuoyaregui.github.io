@@ -1,2 +1,4 @@
-@use "./styles/components";
+@use "./styles/reset";
 @use "./styles/variables";
+@use "./styles/external-imports";
+@use "./styles/components";

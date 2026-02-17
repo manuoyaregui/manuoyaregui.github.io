@@ -1,4 +1,6 @@
 // Colors
+@use "sass:map";
+
 $colors: (
     'dark-blue': #10072A,
     'violet': #4A216A,
@@ -8,11 +10,11 @@ $colors: (
 );
 
 // Backward compatibility variables (optional, but good practice if used elsewhere)
-$dark-blue-color: map-get($colors, 'dark-blue');
-$violet-color: map-get($colors, 'violet');
-$orange-color: map-get($colors, 'orange');
-$magenta-color: map-get($colors, 'magenta');
-$white-color: map-get($colors, 'white');
+$dark-blue-color: map.get($colors, 'dark-blue');
+$violet-color: map.get($colors, 'violet');
+$orange-color: map.get($colors, 'orange');
+$magenta-color: map.get($colors, 'magenta');
+$white-color: map.get($colors, 'white');
 
 :root {
     @each $name, $color in $colors {

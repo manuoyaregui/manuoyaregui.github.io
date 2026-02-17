@@ -1,12 +1,10 @@
-import SVGProcessor from "../components/SVGProcessor"
+import ParallaxScene from "../components/ParallaxScene"
 
 const MainPage = () => {
-
   return (
-    <section>
-      <h1>MainPage</h1>
-      <SVGProcessor image='planet' />
-    </section>
+    <div>
+      <ParallaxScene />
+    </div>
   )
 }
 

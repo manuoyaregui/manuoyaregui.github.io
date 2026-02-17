@@ -1,0 +1,215 @@
+// Z-Index Management
+@use "sass:list";
+
+$z-layers: (
+    "sky",
+    "mountains",
+    "foreground",
+    "ui"
+);
+
+$sky-elements: (
+    "stars",
+    "planet",
+    "clouds-back",
+    "giraffe",
+    "heading-group",
+    "clouds-front"
+);
+
+@function z($list, $name) {
+    $index: list.index($list, $name);
+
+    @if $index {
+        @return $index;
+    }
+
+    @warn 'There is no item "#{$name}" in this list; choosing 0';
+    @return 0;
+}
+
+.parallax-container {
+    height: 200vh;
+    position: relative;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #1a0b2e 0%, #4a216a 100%);
+
+    .parallax-layer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        will-change: transform;
+
+        &.layer-sky {
+            z-index: z($z-layers, "sky");
+
+            .heading-group {
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                z-index: z($sky-elements, "heading-group");
+
+                .heading__main {
+                    font-size: 80px;
+                    font-family: "Permanent Marker", cursive;
+                    color: #ccc;
+                }
+
+                .heading__secondary {
+                    text-align: center;
+                    font-weight: 100;
+                    font-size: 24px;
+                    margin-top: -15px;
+                    color: #bbb;
+                }
+            }
+
+            .planet {
+                position: absolute;
+                top: 15%;
+                left: 10%;
+                width: 15vw;
+                max-width: 200px;
+                rotate: -15deg;
+                z-index: z($sky-elements, "planet");
+            }
+
+            .stars {
+                position: absolute;
+                height: 40vh;
+                width: 100%;
+                background-image: url('../../assets/stars.svg');
+                background-repeat: repeat-x;
+                background-size: contain;
+                background-position: top;
+                z-index: z($sky-elements, "stars");
+
+                &__02 {
+                    rotate: 180deg;
+                }
+
+
+                &__group {}
+            }
+
+            .clouds {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                .clouds-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 40vh;
+                    bottom: -20vh;
+                    z-index: z($sky-elements, "clouds-back");
+                    background-image: url('../../assets/clouds-back.svg');
+                    background-repeat: repeat-x;
+                    background-size: contain;
+                    background-position: top;
+                }
+
+                .clouds-front {
+                    position: absolute;
+                    width: 100%;
+                    height: 30vh;
+                    bottom: -10vh;
+                    z-index: z($sky-elements, "clouds-front");
+                    background-image: url('../../assets/clouds-front.svg');
+                    background-repeat: repeat-x;
+                    background-size: contain;
+                    background-position: top;
+                }
+
+            }
+
+            .giraffe {
+                position: absolute;
+                top: 25vh;
+                right: -20rem;
+                height: 175vh;
+                z-index: z($sky-elements, "giraffe");
+            }
+        }
+
+        &.layer-mountains {
+            z-index: z($z-layers, "mountains");
+
+            .mountain-placeholder {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 35vh;
+                background: linear-gradient(to top, #270E33 50%, transparent); // Placeholder gradient
+
+                // SVG-like shape using clip-path for placeholder
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #2a1b3d;
+                    clip-path: polygon(0% 100%,
+                            15% 40%,
+                            35% 90%,
+                            50% 30%,
+                            70% 80%,
+                            85% 20%,
+                            100% 100%);
+                }
+            }
+        }
+
+        &.layer-foreground {
+            z-index: z($z-layers, "foreground");
+
+            .tree-placeholder {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 50vh; // Taller for foreground
+
+                // Placeholder trees
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 10%;
+                    width: 100px;
+                    height: 300px;
+                    background: #0f0518;
+                    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    right: 15%;
+                    width: 120px;
+                    height: 350px;
+                    background: #0f0518;
+                    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                }
+            }
+        }
+    }
+
+    // Content area just to allow scrolling
+    .content-scroll-area {
+        min-height: 200vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: z($z-layers, "ui");
+    }
+}
